@@ -14,4 +14,16 @@ export default function Home() {
   );
 }
 
-export const getServerSideProps = withPageAuthRequired();
+const getServerSideProps2: GetServerSideProps = async ({ req, res }) => {
+  const session = getSession(req, res);
+
+  console.log('session', session);
+
+  return {
+    props: {},
+  };
+};
+
+export const getServerSideProps = withPageAuthRequired({
+  getServerSideProps: getServerSideProps2,
+});
