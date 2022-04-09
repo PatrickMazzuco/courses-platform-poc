@@ -11,12 +11,16 @@ import { StudentsResolver } from './graphql/resolvers/students.resolver';
 @Module({
   imports: [ConfigModule, DatabaseModule],
   providers: [
+    // Resolvers
     StudentsResolver,
     EnrollmentsResolver,
     CoursesResolver,
+
+    // Services
     StudentService,
     EnrollmentService,
     CourseService,
   ],
+  exports: [StudentService, EnrollmentService, CourseService],
 })
 export class HttpModule {}
