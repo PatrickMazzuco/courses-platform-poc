@@ -4,14 +4,14 @@ Microservice responsible for handling the corses purchases.
 
 ## Tech Stack
 
-React, NextJS, TailwindCSS, Auth0
+NestJS, Node, GraphQL, Apache Kafka, Auth0
 
 ## Run Locally
 
 Create .env file and add the missing environment variables
 
 ```bash
-  cp .env.example .env.local
+  cp .env.example .env
 ```
 
 Install the dependencies
@@ -23,5 +23,5 @@ Install the dependencies
 Start the project
 
 ```bash
-  yarn dev
+  yarn start
 ```

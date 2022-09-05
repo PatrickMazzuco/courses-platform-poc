@@ -1,21 +1,14 @@
-
 # Courses Platform (POC)
 
-
 Project developed during the first edition of the Ignite Labs evento hosted by Rocketseat. It was make as an introduction to working with microservices linked by a gateway and consumed by a Web App
-
-
 
 ![Main](https://github.com/PatrickMazzuco/courses-platform-poc/blob/screenshots/screenshots/main.png?raw=true)
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS
+**Client:** React, NextJS, TailwindCSS, Auth0
 
-**Server:** NestJS, Node, GraphQL, Apache Kafka
-
-
-
+**Server:** NestJS, Node, GraphQL, Apache Kafka, Auth0
 
 ## Run Locally
 

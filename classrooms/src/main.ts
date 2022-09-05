@@ -10,6 +10,7 @@ async function bootstrap() {
   const apiConfig = {
     prefix: 'api/v1',
     port: process.env.PORT || 4040,
+    kafkaBroker: process.env.KAFKA_BROKER || 'localhost:9092',
   };
 
   app.setGlobalPrefix(apiConfig.prefix);
@@ -20,7 +21,7 @@ async function bootstrap() {
     options: {
       client: {
         clientId: 'classroom',
-        brokers: ['localhost:29092'],
+        brokers: [apiConfig.kafkaBroker],
       },
     },
   });
